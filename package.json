@@ -11,10 +11,10 @@
     "tailwind",
     "nextjs"
   ],
-  "homepage": "https://github.com/yourusername/shadcn-devsaround",
+  "homepage": "https://github.com/tahmidbintaslim/shadcn-ui-library",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/shadcn-devsaround.git"
+    "url": "https://github.com/tahmidbintaslim/shadcn-ui-library.git"
   },
   "license": "MIT",
   "private": true,

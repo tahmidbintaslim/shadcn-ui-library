@@ -18,17 +18,20 @@ A curated collection of beautiful, accessible, and reusable components built wit
 ## 🚀 Quick Start
 
 1. Clone the repository:
+
 ```bash
-git clone https://github.com/yourusername/shadcn-devsaround.git
-cd shadcn-devsaround
+git clone https://github.com/tahmidbintaslim/shadcn-ui-library.git
+cd shadcn-ui-library
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Run the development server:
+
 ```bash
 npm run dev
 ```
@@ -38,6 +41,7 @@ npm run dev
 ## 📦 Available Components
 
 ### Interactive Card
+
 A beautiful card component with hover effects and flexible content layout.
 
 ```tsx
@@ -49,10 +53,11 @@ import { InteractiveCard } from "@/components/custom/interactive-card";
   badge="New"
   actionText="Learn More"
   onAction={() => console.log("Action clicked")}
-/>
+/>;
 ```
 
 ### Pricing Card
+
 Professional pricing cards with features list and call-to-action buttons.
 
 ```tsx
@@ -65,14 +70,15 @@ import { PricingCard } from "@/components/custom/pricing-card";
   features={[
     { text: "Unlimited projects", included: true },
     { text: "24/7 support", included: true },
-    { text: "Advanced analytics", included: false }
+    { text: "Advanced analytics", included: false },
   ]}
   popular={true}
   onSelect={() => console.log("Plan selected")}
-/>
+/>;
 ```
 
 ### Statistics Card
+
 Display key metrics and statistics with beautiful trend indicators.
 
 ```tsx
@@ -84,7 +90,7 @@ import { StatisticsCard } from "@/components/custom/statistics-card";
   prefix="$"
   change={20.1}
   changePeriod="from last month"
-/>
+/>;
 ```
 
 ## 🎨 Customization
