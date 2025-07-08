@@ -28,7 +28,7 @@ export default function Home() {
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="https://github.com/yourusername/shadcn-devsaround" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/tahmidbintaslim/shadcn-ui-library" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4 mr-2" />
                 View on GitHub
               </a>
@@ -96,16 +96,43 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { name: "Interactive Cards", description: "Hover effects, animations, and beautiful layouts" },
-            { name: "Data Tables", description: "Sortable, filterable, and paginated tables" },
-            { name: "Form Components", description: "Validation, accessibility, and modern styling" },
-            { name: "Navigation", description: "Responsive menus, breadcrumbs, and tabs" },
-            { name: "Feedback", description: "Toasts, alerts, and loading states" },
-            { name: "Charts", description: "Beautiful data visualizations and graphs" }
+            {
+              name: "Interactive Card",
+              description: "Hover effects, animations, and flexible content layouts",
+              icon: "⚡"
+            },
+            {
+              name: "Pricing Card",
+              description: "Professional pricing plans with feature lists and CTAs",
+              icon: "💰"
+            },
+            {
+              name: "Statistics Card",
+              description: "Beautiful metrics display with trend indicators",
+              icon: "📈"
+            },
+            {
+              name: "Testimonial Card",
+              description: "Customer testimonials with ratings and avatars",
+              icon: "💬"
+            },
+            {
+              name: "Feature Card",
+              description: "Showcase product features with icons and descriptions",
+              icon: "💡"
+            },
+            {
+              name: "Blog Card",
+              description: "Article cards with metadata and multiple layouts",
+              icon: "📖"
+            }
           ].map((component, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-lg">{component.name}</CardTitle>
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-2xl">{component.icon}</span>
+                  <CardTitle className="text-lg">{component.name}</CardTitle>
+                </div>
                 <CardDescription>{component.description}</CardDescription>
               </CardHeader>
               <CardContent>
@@ -134,7 +161,7 @@ export default function Home() {
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="https://github.com/yourusername/shadcn-devsaround" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/tahmidbintaslim/shadcn-ui-library" target="_blank" rel="noopener noreferrer">
                 <Star className="w-4 h-4 mr-2" />
                 Star on GitHub
               </a>
