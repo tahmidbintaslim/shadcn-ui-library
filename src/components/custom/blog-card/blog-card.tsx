@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { ArrowRight, Calendar, Clock, Heart, User } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 export interface BlogCardProps {
@@ -118,10 +119,11 @@ export const BlogCard = React.memo<BlogCardProps>(({
                 "relative overflow-hidden",
                 variant === "horizontal" ? "w-48 h-full" : "w-full h-48"
             )}>
-                <img
+                <Image
                     src={image}
                     alt={title}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 {category && (
                     <Badge
@@ -161,10 +163,12 @@ export const BlogCard = React.memo<BlogCardProps>(({
                 <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
                         {authorAvatar ? (
-                            <img
+                            <Image
                                 src={authorAvatar}
                                 alt={author}
-                                className="w-8 h-8 rounded-full object-cover"
+                                width={32}
+                                height={32}
+                                className="rounded-full object-cover"
                             />
                         ) : (
                             <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary/20 to-primary/40 flex items-center justify-center">

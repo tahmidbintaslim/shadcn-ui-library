@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { Quote, Star } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 export interface TestimonialCardProps {
@@ -113,10 +114,12 @@ export const TestimonialCard = React.memo<TestimonialCardProps>(({
                 {/* Author */}
                 <div className="flex items-center space-x-4">
                     {avatar ? (
-                        <img
+                        <Image
                             src={avatar}
                             alt={author}
-                            className="w-12 h-12 rounded-full object-cover border-2 border-primary/10"
+                            width={48}
+                            height={48}
+                            className="rounded-full object-cover border-2 border-primary/10"
                         />
                     ) : (
                         <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary/40 flex items-center justify-center">

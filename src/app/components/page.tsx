@@ -1,3 +1,5 @@
+"use client";
+
 import { BlogCard } from "@/components/custom/blog-card";
 import { FeatureCard } from "@/components/custom/feature-card";
 import { InteractiveCard } from "@/components/custom/interactive-card";
